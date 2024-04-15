@@ -1,0 +1,75 @@
+.section4 {
+      width: 100%;
+      height: auto;
+      margin: 8rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 5.5rem
+      
+}
+
+.imgContainer {
+      position: relative;
+      width: 38.5%;
+      height: 38rem;
+}
+
+.img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+}
+
+
+.textContainer {
+      width: 38%;
+      height: auto;
+}
+
+.about {
+      font-family: cursive;
+      color: rgba(211, 0, 0, 0.903);
+      display: block;
+      font-size: 1.3rem;
+}
+
+.h2 {
+      display: block;
+      font-size: 2.5rem;
+      margin-top: .9rem;
+      margin-bottom: 2rem;
+}
+
+.text1, .text2 {
+      display: block;
+      line-height: 1.8rem;
+      color: rgb(120, 120, 120);
+      font-size: .97rem;
+}
+
+
+
+.info1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 70%;
+      gap: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 2.8rem;
+}
+
+.info1Text1 {
+      display: block;
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: rgb(43, 43, 43);
+}
+
+.info1Text2 {
+      line-height: 1.8rem;
+      display: inline-block;
+      color: rgb(120, 120, 120);
+      font-size: .95rem;
+}
+

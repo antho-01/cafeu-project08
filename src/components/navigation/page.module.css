@@ -1,0 +1,813 @@
+.header {
+      position: sticky;
+      top: 0;
+      left: 0;
+      z-index: 1;
+}
+
+.navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 7rem;
+      max-width: 100%;
+      height: auto;
+      box-shadow: 1px 2px 15px rgba(180, 179, 179, 0.5);
+      background-color: white;
+      
+     
+}
+
+.imageContainer {
+      position: relative;
+      width: 8.5rem;
+      height: 3.3rem;
+}
+
+.imageContainer img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+}
+
+.dropDown1 {
+      display: flex;
+      gap: 2.5rem;
+      align-items: center;
+}
+
+.drop {
+      position: relative;
+      display: inline-block;
+      
+}
+
+.dropDownButton {
+      display: inline-block;
+      width: 6rem;
+      padding-bottom: 1rem;
+      font-size: .92rem;
+      color: rgb(78, 78, 78);
+      
+}
+
+.list {
+      position: absolute;
+      display: none;
+      width: 13rem;
+      background-color: white;;
+      height: auto;
+      border-top: 5px solid rgb(86, 0, 0);
+      transition: display .4s ease-in-out;
+      animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+      
+      
+}
+
+#active {
+      background-color: rgba(113, 113, 113, 0.12);
+}
+
+#active:hover {
+      color: red;
+}
+
+.icon {
+      transition: all .3s ease-out;
+}
+
+.drop:hover .icon {
+      transform: rotate(180deg);
+}
+
+.drop:hover .list {
+      display: block;
+}
+
+.items {
+      padding: .8rem;
+      color: rgb(124, 124, 124);
+      transition: all .3s ease-out;
+      border: .1px solid #e2e2e257;
+      font-family: sans-serif;
+}
+
+.items:hover {
+      color: red;
+      background-color: rgba(113, 113, 113, 0.12);
+}
+
+.search {
+      font-size: 1.1rem;
+      font-weight: bold;
+      display: inline-block;
+      transition: all .2s ease-out;
+}
+
+.search:hover {
+      color: maroon;
+}
+
+.contactInfo {
+      width: auto;
+      padding-top: .5rem;
+      background-color: red;;
+      display: inline-block;
+      display: flex;
+      align-items: center;
+
+      
+}
+
+.imgContain {
+      display: inline-block;
+      margin: 0 .7rem 0 1.5rem;
+}
+
+.img {
+      
+      display: inline-block;
+
+}
+
+.number {
+      display: inline-block;
+      color: rgb(86, 86, 86);
+}
+
+.number:hover {
+      color: maroon;
+}
+
+.imgContain:hover + .number {
+      color: maroon;
+}
+
+
+.hamburger {
+      display: none;
+      transition: all 5s ease-out;
+}
+
+
+.burger1 {
+      width: 2rem;
+      height: .1rem;
+      background-color: black;
+      transition: all 5s ease-out;
+}
+
+.burger2 {
+      width: 1.5rem;
+      height: .1rem;
+      background-color: black;
+      margin-top: .1rem;
+      transition: all 5s ease-out;
+      
+      
+}
+
+.burger3{
+      width: 1rem;
+      height: .1rem;
+      background-color: black;
+      margin-top: .1rem;
+      transition: all 5s ease-out;
+      
+}
+
+
+
+.hamburger:hover .burger2 {
+      width: 2rem;
+}
+
+.hamburger:hover .burger3 {
+      width: 2rem;
+}
+
+.hamburger:hover .burger2{
+      margin: .28rem 0;
+}
+
+.btn {
+      display: none;
+}
+
+.label {
+      display: inline-block;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      background-color: green;
+      display: none;
+}
+
+/* Small Navigation */
+
+.sNav {
+      display: none;
+      position: absolute;
+      top: .3rem;
+      left: .2rem;
+      height: 100vh;
+      width: 100%;
+      z-index: 1;
+      background-color: whitesmoke;
+      width: 100%;
+      
+      
+}
+
+.sNavShow {
+      display: none;
+}
+
+.sNavToggle {
+      padding: 1rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      
+}
+
+.imageContainerSNav {
+      position: relative;
+      width: 5.2rem;
+      height: 2rem;
+}
+
+.imageContainerSNav img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+}
+
+.exit {
+      display: block;
+      position: relative;
+      font-size: .8rem;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background-color: white;
+      box-shadow: .5px .5px .5px 4px rgba(113, 113, 113, .1);
+      
+}
+
+.x {
+      padding: .5rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+}
+
+.x:hover {
+      cursor: pointer;
+}
+
+.sNavShow {
+      display: none;
+}
+
+
+
+
+@media screen and (min-width: 320px) and (max-width: 470px) {
+      .dropDowns {
+            display: none;
+      }
+      .dropDown1 {
+            display: none;
+      }
+      .navigation {
+            padding: 1.5rem;
+      }
+
+      .imageContainer {
+            position: absolute;
+            width: 5rem;
+            height: 2rem;
+            top: rem;
+            left: 1.2rem
+      }
+      
+      .imageContainer img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+      }
+      
+      .dropDowns {
+            display: none;
+            
+      }
+
+      .hamburger {
+            display: block;
+            position: absolute;
+            right: 1.5rem
+      }
+
+
+
+
+      /* small Screen */
+      .sNav {
+            display: block;
+            position: fixed;
+            top: 0px;
+            left: 30rem;
+            transition: all .5s ease-out;
+      }
+
+      .sNavShow {
+            display: block;
+            width: 100%;
+            height: auto;
+            background-color: rgb(255, 255, 255);
+            display: block;
+            position: absolute;
+            top: 0px;
+            left: 0rem;
+            transition: all .5s ease-out;
+      }
+
+      .sDDContainer {
+            max-width: 90%;
+            margin: 0 auto;
+            font-family: sans-serif;
+            font-size: .9rem;
+      }
+
+      /* dropDown goes here */
+
+      .drop1 {
+            position: relative;
+            display: block;
+      }
+
+      .drop1Button {
+            font-size: .9rem;
+            max-width: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: .1px solid rgb(232, 232, 232);
+            
+      }
+
+
+      .drop1Text {
+            display: inline-block;
+            padding: .4rem;
+      }
+
+      .drop1Switch {
+            display: inline-block;
+            background-color: #ababab;
+            padding: .5rem 0;
+            width: 2.65rem;
+            text-align: center;
+            color: white;
+            transition: all .3rem ease-out;
+            cursor: pointer;
+      }
+
+      .drop1Switch:hover {
+            background-color: #ccc;
+            color: black
+      }
+      
+
+      .drop1List {
+            display: none;
+      }
+
+      .drop1List1 {
+            display: block;
+            background-color: white;    
+      }
+
+      .drop1Items {
+            margin: .5rem;
+            padding: .5rem;
+            border-bottom: .1px solid rgb(228, 228, 228);
+            font-size: .8rem;
+      }
+
+      /* drop2 goes here */
+      
+      .drop2 {
+            position: relative;
+            display: block;
+      }
+
+      .drop2Button {
+            font-size: .9rem;
+            max-width: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: .1px solid rgb(232, 232, 232);
+            
+      }
+
+
+      .drop2Text {
+            display: inline-block;
+            padding: .5rem;
+      }
+
+      .drop2Switch {
+            display: inline-block;
+            background-color: #ababab;
+            padding: .5rem 0;
+            width: 2.65rem;
+            text-align: center;
+            color: white;
+            transition: all .3s ease-out;
+      }
+
+      .drop2Switch:hover {
+            background-color: #ccc;
+            color: black
+      }
+      
+
+      .drop2List {
+            display: none;
+      }
+
+      .drop2List2 {
+            display: block;
+            background-color: white;    
+      }
+
+      .drop1Items {
+            margin: .5rem;
+            padding: .5rem;
+            border-bottom: .1px solid rgb(228, 228, 228);
+            font-size: .8rem;
+      }
+
+      /* dropdown3 goes here */
+
+      .drop3 {
+            position: relative;
+            display: block;
+      }
+
+      .drop3Button {
+            font-size: .9rem;
+            max-width: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: .1px solid rgb(232, 232, 232);
+            
+      }
+
+
+      .drop3Text {
+            display: inline-block;
+            padding: .5rem;
+      }
+
+      .drop3Switch {
+            display: inline-block;
+            background-color: #ababab;
+            padding: .5rem 0;
+            width: 2.65rem;
+            text-align: center;
+            color: white;
+            transition: all .3s ease-out;
+      }
+      
+      .drop3Switch:hover {
+            background-color: #ccc;
+            color: black
+      }
+
+      .drop3List {
+            display: none;
+      }
+
+      .drop3List3 {
+            display: block;
+            background-color: white;    
+      }
+
+      .drop1Items {
+            margin: .5rem;
+            padding: .5rem;
+            border-bottom: .1px solid rgb(228, 228, 228);
+            font-size: .8rem;
+      }
+
+      /* dropdown 4 goes here */
+
+      .drop4 {
+            position: relative;
+            display: block;
+      }
+
+      .drop4Button {
+            font-size: .9rem;
+            max-width: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: .1px solid rgb(232, 232, 232);
+            
+      }
+
+
+      .drop4Text {
+            display: inline-block;
+            padding: .5rem;
+      }
+
+      .drop4Switch {
+            display: inline-block;
+            background-color: #ababab;
+            padding: .5rem 0;
+            width: 2.65rem;
+            text-align: center;
+            color: white;
+            transition: all .3s ease-out;
+      }
+      
+      .drop4Switch:hover {
+            background-color: #ccc;
+            color: black
+      }
+
+      .drop4List {
+            display: none;
+      }
+
+      .drop4List4 {
+            display: block;
+            background-color: white;    
+      }
+
+      .dropItems {
+            margin: .5rem;
+            padding: .5rem;
+            border-bottom: .1px solid rgb(228, 228, 228);
+            font-size: .8rem;
+      }
+
+      /* dropdown 5 goes here */
+
+      .drop5 {
+            position: relative;
+            display: block;
+      }
+
+      .drop5Button {
+            font-size: .9rem;
+            max-width: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: .1px solid rgb(232, 232, 232);
+            
+      }
+
+
+      .drop5Text {
+            display: inline-block;
+            padding: .5rem;
+      }
+
+      .drop5Switch {
+            display: inline-block;
+            background-color: #ababab;
+            padding: .5rem 0;
+            width: 2.65rem;
+            text-align: center;
+            color: white;
+            transition: all .3s ease-out;
+      }
+      
+      .drop5Switch:hover {
+            background-color: #ccc;
+            color: black
+      }
+
+      .drop5List {
+            display: none;
+      }
+
+      .drop5List5 {
+            display: block;
+            background-color: white;    
+      }
+
+      .drop1Items {
+            margin: .5rem;
+            padding: .5rem;
+            border-bottom: .1px solid rgb(228, 228, 228);
+            font-size: .8rem;
+      }
+
+      /* dropdown 6 */
+      .drop6 {
+            position: relative;
+            display: block;
+      }
+
+      .drop6Button {
+            font-size: .9rem;
+            max-width: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: .1px solid rgb(232, 232, 232);
+            
+      }
+
+
+      .drop6Text {
+            display: inline-block;
+            padding: .5rem;
+      }
+
+      .drop6Switch {
+            display: inline-block;
+            background-color: #ababab;
+            padding: .5rem 0;
+            width: 2.65rem;
+            text-align: center;
+            color: white;
+            transition: all .3s ease-out;
+      }
+
+      .drop6Switch:hover {
+            background-color: #ccc;
+            color: black
+      }
+      
+
+      .drop6List {
+            display: none;
+      }
+
+      .drop6List6 {
+            display: block;
+            background-color: white;    
+      }
+
+      .drop1Items {
+            margin: .5rem;
+            padding: .5rem;
+            border-bottom: .1px solid rgb(228, 228, 228);
+            font-size: .8rem;
+      }
+
+      .property {
+            display: flex;
+            justify-content: flex-start;
+            gap: 1.5rem;
+            margin: 2rem 0;
+            padding: 0 1.2rem;
+      }
+
+      .cart {
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            border: .1px solid #ccc;
+            padding: .85rem;
+            position: relative;
+            transition: all .3s ease-out;
+      }
+
+      .theCart {
+            font-size: .8rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+      }
+
+      .zero {
+            display: inline-block;
+            position: relative;
+            top: -1.6rem;
+            right: 0;
+            background-color: transparent;
+            width: .5rem;
+            height: .5rem;
+            border-radius: 50%;
+            padding: .5rem;
+            border: .1px solid #ccc;
+            
+
+      }
+
+      .zeroIcon {
+            font-family: sans-serif;
+            font-size: .6rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+      }
+
+
+      .face {
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            border: .1px solid #ccc;
+            padding: .85rem;
+            position: relative;
+            transition: all .3s ease-out;
+      }
+
+      .theFace {
+            font-size: .8rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+      }
+
+      .face:hover, .cart:hover {
+            color: #800800;
+      }
+
+      .contactInformation1 {
+            width: 90%;
+            margin: 0 auto;
+      }
+
+      .headingInformation1 {
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+            font-family: sans-serif;
+            font-size: 1.2rem;
+            text-decoration: underline;
+            text-decoration-color: #800800;
+      }
+
+      .address, .phone, .email{
+            margin-bottom: 1rem;
+            transition: all .4s ease-out;
+      }
+
+      .addressIconCon, .phoneIconCon, .emailIconCon {
+            width: 1rem;
+            height: 1rem;
+            position: relative;
+            background-color: #f0efef;
+            border-radius: .2rem;
+            padding: .3rem 1rem;
+
+      }
+
+      .addressIcon, .phoneIcon, .emailIcon {
+            font-size: .7rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+      }
+
+      .street, .phoneNumber, .emailAddress {
+            font-family: sans-serif;
+            margin-left: 1rem;
+            font-size: .75rem;
+      }
+
+      .address:hover .street, .phone:hover .phoneNumber, .email:hover .emailAddress {
+            color: #800800;
+      }
+      
+      .socials {
+            margin: 2rem 0;
+      }
+      
+
+      .facebook, .twitter, .Linked, .basket {
+            font-size: 1rem;
+            padding: .1rem;
+            transition: all .4s ease-out;
+      }
+
+      .facebook:hover, .twitter:hover, .Linked:hover, .basket:hover {
+            color: #800800;
+      } 
+}

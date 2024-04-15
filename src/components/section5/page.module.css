@@ -1,0 +1,41 @@
+.section5 {
+      background-image: url("/cafeuImage/bg.88381096.jpg");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 90vh;
+      margin-top: 5rem;
+}
+
+.header {
+      text-align: center;
+      margin: 0 auto;
+      line-height: 3.2rem;
+}
+
+.heading {
+      font-family: cursive;
+      color: rgb(136, 0, 0);
+      font-size: 1.2rem;
+
+}
+
+.subHeading {
+      font-size: 2.35rem;
+      color: rgb(55, 55, 55);
+}
+
+.router {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+}
+
+.router a {
+      color:rgb(55, 55, 55);
+}
+
+.all img {
+      display: inline-block;
+}

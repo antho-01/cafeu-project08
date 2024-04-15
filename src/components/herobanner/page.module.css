@@ -1,0 +1,156 @@
+.section1 {
+      background-image: url("/cafeuImage/banner-bg.563b99ab.jpg");
+      
+}
+
+.herobanner {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      align-items: center;
+      
+}
+
+.heroText {
+      width: 40%;
+      height: auto;
+}
+
+.heroBannerH1 {
+      width: 100%;
+}
+
+.heroBannerH1Span1 {
+      display: block;
+      margin: 1.5rem 0;
+      font-size: 1.3rem;
+      color: rgb(184, 0, 0);
+      font-weight: bolder;
+      font-family: cursive;
+
+}
+
+.heroBannerH1Span2, .heroBannerH1Span3 {
+      display: block;
+      margin-bottom: .75rem;
+      font-size: 3.1rem;
+      font-weight: bold;
+
+}
+
+.spice {
+      display: inline-block;
+      color: rgb(184, 0, 0);
+      font-weight: bold;
+}
+
+.s,.i {
+      text-decoration: underline;
+}
+
+
+
+
+
+.heroBannerH1Span4 {
+      display: block;
+      font-size: .9rem;
+      line-height: 1.5rem;
+      font-family: sans-serif;
+      color: rgb(105, 105, 105);
+      margin-top: 2rem;
+
+}
+
+
+.heroImageContainer {
+      position: relative;
+      width: 35%;
+      height: 30rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+}
+
+.heroImage {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      perspective-origin: 1200rem;
+}
+
+.buttonSection {
+      margin-top: 1.7rem;
+      width: 100%;
+      display: flex;
+      height: auto;
+      gap: 1rem;
+      align-items: center;
+}
+
+
+.heartBeat {
+      display: block;
+      background-color:  rgb(184, 0, 0);
+      padding: .8rem;
+      border-radius: 100%;
+      font-size: 1.3rem;
+      color: white;
+      position: relative;
+      
+}
+
+.heartBeat::after {
+      display: block;
+      content: " ";
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      transition: all .4s;
+      
+}
+
+ .heartBeat::after {
+       animation: heartbeat 1.2s ease-out infinite alternate;
+       
+ }
+
+
+ @keyframes heartbeat {
+      0% { 
+            transform: scale(1.5);
+            background-color: rgb(61, 0, 0);
+            opacity: 0;
+      }  
+ }
+
+
+.socials{
+     position: absolute;
+     top: 40%;
+     right: -6.5rem;
+     transform: rotateZ(90deg);
+     text-align: center;
+     
+}
+
+.social_span {
+      display: inline-block;
+      padding: 1rem;
+      color: black;
+      font-size: .95rem;
+      transition: all 2s;
+}
+
+.social_span:hover {
+      text-decoration: underline;
+      color: rgb(213, 0, 0);
+}
+
+
